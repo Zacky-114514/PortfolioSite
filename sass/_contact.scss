@@ -1,0 +1,42 @@
+.contact{
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+
+.contact-wrap{
+    width: 100%;
+}
+
+.contact-title{
+    width: 10%;
+    margin: 0 auto;
+    font-family: 'Piedra', cursive;
+    font-size: 24px;
+    &::after{
+        display: block;
+        content: "";
+        border-bottom: 2px solid white;
+        transition: all 0.2s linear;
+        transform: scale(0, 1);
+}
+    &:hover {
+        &::after{
+                    transform: scale(1, 1); 
+                    ////////////////////////////////////
+                    // hoverした時の状態を記述する       //
+                    ////////////////////////////////////
+                }
+    }
+}
+
+.contact-lecture{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom:20px ;
+}
+
+.contact-access{
+    text-align: right;
+}

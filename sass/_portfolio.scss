@@ -1,0 +1,80 @@
+.portfolio-wrap{
+    width: 100%;
+    height:600px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.pf-1{
+    width: 10%;
+    margin: 0 auto;
+    font-family: 'Piedra', cursive;
+    font-size: 24px;
+    &::after{
+        display: block;
+        content: "";
+        border-bottom: 2px solid black;
+        transition: all 0.2s linear;
+        transform: scale(0, 1);
+}
+    &:hover {
+        &::after{
+                    transform: scale(1, 1); 
+                    ////////////////////////////////////
+                    // hoverした時の状態を記述する       //
+                    ////////////////////////////////////
+                }
+    }
+}
+
+.pf-2{
+    font-size: 32px;
+    font-weight: 900;
+    padding-bottom:20px ;
+    color: goldenrod;
+}
+
+.portfolio-box{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+    box-shadow: 2px 2px 14px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.pf-box-title{
+    font-size: 32px;
+    font-weight: 900;
+    padding-bottom:20px ;
+}
+
+.pf-box-item{
+    width: 45%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.pf-box-img{
+    overflow: hidden;
+    
+    &:hover{
+    background-color: #009999 ;
+    opacity: 1;
+    }
+}
+
+.pf-box-img-1{
+    -webkit-transform: scale(1.5);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    &:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+    }
+}
